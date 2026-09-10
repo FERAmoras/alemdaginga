@@ -334,12 +334,11 @@ nav ul {
 /* --- Responsividade --- */
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
-  body {
-    font-size: 14px; /* substitui o anterior */
+  .galeria {
+    grid-template-columns: 1fr;
   }
   nav ul {
-    flex-direction: column; /* muda só no mobile */
-    align-items: center;
+    flex-direction: column;
   }
 }
 
