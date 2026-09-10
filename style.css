@@ -318,3 +318,28 @@ h1, h2, p {
   flex-shrink: 0;     /* impede que a imagem seja comprimida */
   border-radius: 8px;
 }
+
+/* Regras gerais (PC) */
+body {
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Layout padrão */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* --- Responsividade --- */
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* substitui o anterior */
+  }
+  nav ul {
+    flex-direction: column; /* muda só no mobile */
+    align-items: center;
+  }
+}
+
